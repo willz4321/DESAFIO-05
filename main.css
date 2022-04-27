@@ -10,9 +10,10 @@
 
 /*====== VISUALIZACION PARA MOVIL =======*/
 
-@media screen and (min-width: 320px) {
+  @media screen and (min-width: 320px) {
 
     .body-index {
+        width: 100vw;
         background-image: linear-gradient(25deg, #ffdeb2 0, #fae0b1 3.33%, #f4e3b0 6.67%, #ece5b1 10%, #e5e7b3 13.33%, #dde9b6 16.67%, #d5ebb9 20%, #cdedbe 23.33%, #c6eec3 26.67%, #beefc9 30%, #b7f0cf 33.33%, #b0f1d6 36.67%, #aaf2dd 40%, #a4f2e4 43.33%, #a0f2eb 46.67%, #9df2f2 50%, #9bf2f9 53.33%, #9cf1ff 56.67%, #9df0ff 60%, #a1efff 63.33%, #a6edff 66.67%, #acecff 70%, #b3eaff 73.33%, #bce8ff 76.67%, #c5e6ff 80%, #cee3ff 83.33%, #d7e1ff 86.67%, #e1dfff 90%, #eadcff 93.33%, #f2daff 96.67%, #fad8ff 100%);
         width: 100vw;
     }
@@ -100,17 +101,8 @@
          border-radius: 30px;
          display: grid;
          box-sizing: border-box;
-         grid-template-areas:
-           "seccion"
-           "media"
-           "descripcion"
-           "articulo"
-         ;
-         grid-gap: 10px;
         }
        .seccion {
-           grid-area: seccion;
-           width: 100vw;
            font-size: 25px;
            text-align: center;
            padding: 0px 5px;
@@ -120,22 +112,17 @@
            box-sizing: border-box;
        }
        .media {
-           grid-area: media;
            width: 150px;
            height: 150px;
-           position: relative;
-           left: 85px;
            display: flex;
-           justify-items: center;
+          justify-self: center;
        }
        .articulo {
-           grid-area: articulo;
            font-size: 15px;
            padding: 5px 10px;
            text-align: left;
        }
        .descripcion {
-           grid-area: descripcion;
            padding: 0px 5px;
        }
        ul {
@@ -414,9 +401,9 @@
         align-items: flex-end;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 40px;
-       -webkit-text-stroke: 6px rgb(24, 173, 173);
+       -webkit-text-stroke: 2px rgb(24, 173, 173);
        -webkit-text-fill-color: transparent;
-       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.442);
+       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         padding: 10px 0px; 
     }
     
@@ -436,7 +423,7 @@
     }
     nav {
         grid-area: nav;
-        width: 100vw;
+        width: 99vw;
         background-image: linear-gradient(85deg, #d9eab7 0, #d2ecbb 5%, #caedc0 10%, #c3efc5 15%, #bcf0cb 20%, #b5f1d1 25%, #aef1d7 30%, #a9f2de 35%, #a4f2e5 40%, #a0f2eb 45%, #9df2f2 50%, #9cf2f8 55%, #9bf1fe 60%, #9df0ff 65%, #a0efff 70%, #a4eeff 75%, #aaecff 80%, #b1ebff 85%, #b8e9ff 90%, #c1e7ff 95%, #c9e5ff 100%);
         display: flex;
         flex-direction: row;
@@ -449,24 +436,14 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     }
     main div{
-        width: 100vw;
         padding: 20px 0px;
         background-color: rgba(207, 242, 237, 0.955);
          border-style: solid;
          border-radius: 30px;
          border-color: rgba(240, 196, 143, 0.41);
-         display: grid;
-         grid-template-areas: 
-         "seccion seccion"
-         "media descripcion"
-         "media articulo"
-         ;
-         grid-gap: 10px;
         }
        .seccion {
-           grid-area: seccion;
-           width: 100vw;
-           font-size: 40px;
+           font-size: 25px;
            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
            text-align: center;
            padding: 0px 5px;
@@ -476,20 +453,17 @@
            box-sizing: border-box;
        }
        .media {
-           grid-area: media;
            width: 170px;
            height: 170px;
-           position: relative;
-           left: 7px;
+           display: flex;
+           justify-self: center;
        }
        .articulo {
-           grid-area: articulo;
            font-size: 25px;
            padding: 5px 10px;
            text-align: left;
        }
        .descripcion {
-           grid-area: descripcion;
            font-size: 30px;
            padding: 0px 5px;
        }
@@ -711,7 +685,7 @@
         display: flex;
         justify-content: center;
     }                
-}
+} 
 
 /*====== VISUALIZACION PARA PC/LAPTOP =======*/
 
@@ -756,7 +730,7 @@
         align-items: flex-end;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 40px;
-       -webkit-text-stroke: 6px rgb(24, 173, 173);
+       -webkit-text-stroke: 2px rgb(24, 173, 173);
        -webkit-text-fill-color: transparent;
        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.442);
         padding: 10px 0px; 
@@ -791,23 +765,21 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
         transition: all .3s ease-in-out;
     }
+    .navbar-personal {
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+    }
     main div{
         width: 100vw;
         background-color: rgba(207, 242, 237, 0.955);
          border-style: solid;
          border-radius: 30px;
          border-color: rgba(240, 196, 143, 0.41);
-         display: grid;
-         grid-template-areas: 
-         "seccion seccion"
-         "media descripcion"
-         "media articulo"
-         ;
-         grid-gap: 10px;
         }
        .seccion {
-           grid-area: seccion;
-           width: 100vw;
            font-size: 45px;
            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
            text-align: center;
@@ -818,30 +790,21 @@
            box-sizing: border-box;
        }
        .media {
-           grid-area: media;
            width: 400px;
            height: 400px;
-           position: relative;
-           left: 7px;
+           display: flex;
+           justify-self: center;
        }
        .articulo {
-           grid-area: articulo;
            font-size: 28px;
            padding: 5px 10px;
            text-align: left;
        }
        .descripcion {
-           grid-area: descripcion;
            font-size: 30px;
            padding: 0px 5px;
        }
-       .navbar-personal {
-           width: 100vw;
-           display: flex;
-           flex-direction: row;
-           justify-content: space-around;
-           list-style: none;
-       }
+       
        .contactos {
         width: 35px;
         height: 35px;
