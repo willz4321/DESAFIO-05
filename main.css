@@ -1,0 +1,1088 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.enlaces {
+    text-decoration: none;
+}
+
+/*====== VISUALIZACION PARA MOVIL =======*/
+
+@media screen and (min-width: 320px) {
+
+    .body-index {
+        background-image: linear-gradient(25deg, #ffdeb2 0, #fae0b1 3.33%, #f4e3b0 6.67%, #ece5b1 10%, #e5e7b3 13.33%, #dde9b6 16.67%, #d5ebb9 20%, #cdedbe 23.33%, #c6eec3 26.67%, #beefc9 30%, #b7f0cf 33.33%, #b0f1d6 36.67%, #aaf2dd 40%, #a4f2e4 43.33%, #a0f2eb 46.67%, #9df2f2 50%, #9bf2f9 53.33%, #9cf1ff 56.67%, #9df0ff 60%, #a1efff 63.33%, #a6edff 66.67%, #acecff 70%, #b3eaff 73.33%, #bce8ff 76.67%, #c5e6ff 80%, #cee3ff 83.33%, #d7e1ff 86.67%, #e1dfff 90%, #eadcff 93.33%, #f2daff 96.67%, #fad8ff 100%);
+        width: 100vw;
+    }
+   .body-hogar{
+    width: 100vw;
+    background-image: linear-gradient(25deg, #ffdeb2 0, #fae0b1 3.33%, #f4e3b0 6.67%, #ece5b1 10%, #e5e7b3 13.33%, #dde9b6 16.67%, #d5ebb9 20%, #cdedbe 23.33%, #c6eec3 26.67%, #beefc9 30%, #b7f0cf 33.33%, #b0f1d6 36.67%, #aaf2dd 40%, #a4f2e4 43.33%, #a0f2eb 46.67%, #9df2f2 50%, #9bf2f9 53.33%, #9cf1ff 56.67%, #9df0ff 60%, #a1efff 63.33%, #a6edff 66.67%, #acecff 70%, #b3eaff 73.33%, #bce8ff 76.67%, #c5e6ff 80%, #cee3ff 83.33%, #d7e1ff 86.67%, #e1dfff 90%, #eadcff 93.33%, #f2daff 96.67%, #fad8ff 100%);
+    }
+    .contenedor {
+        width: 100vw;
+        background-image: linear-gradient(25deg, #ffdeb2 0, #fae0b1 3.33%, #f4e3b0 6.67%, #ece5b1 10%, #e5e7b3 13.33%, #dde9b6 16.67%, #d5ebb9 20%, #cdedbe 23.33%, #c6eec3 26.67%, #beefc9 30%, #b7f0cf 33.33%, #b0f1d6 36.67%, #aaf2dd 40%, #a4f2e4 43.33%, #a0f2eb 46.67%, #9df2f2 50%, #9bf2f9 53.33%, #9cf1ff 56.67%, #9df0ff 60%, #a1efff 63.33%, #a6edff 66.67%, #acecff 70%, #b3eaff 73.33%, #bce8ff 76.67%, #c5e6ff 80%, #cee3ff 83.33%, #d7e1ff 86.67%, #e1dfff 90%, #eadcff 93.33%, #f2daff 96.67%, #fad8ff 100%);
+        display: grid;
+        grid-template-areas: 
+         "header"
+         "main"
+         "footer"
+        ;
+        grid-gap: 5px;
+    }
+    header{
+        width: 100vw;
+        grid-area: header;
+        display: grid;
+        grid-template-areas: 
+        "logo-inicio encabezado"
+        "nav nav"
+        ;
+        grid-gap: 2px 0px;
+        background-image: url('../DESAFIO-04/media/personas.jpg');
+        background-size: contain;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+    .encabezado {
+        grid: encabezado;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 19px;
+       -webkit-text-stroke: 2px rgb(24, 173, 173);
+       -webkit-text-fill-color: transparent;
+       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        padding: 2px 0px; 
+    }
+    .logo-inicio{
+        grid-area: logo-inicio;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+    }
+     
+    .logo {
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        border-style: solid;
+        border-radius: 40px;
+    }
+
+    nav {
+        grid-area: nav;
+        width: 100vw;
+        background-image: linear-gradient(85deg, #d9eab7 0, #d2ecbb 5%, #caedc0 10%, #c3efc5 15%, #bcf0cb 20%, #b5f1d1 25%, #aef1d7 30%, #a9f2de 35%, #a4f2e5 40%, #a0f2eb 45%, #9df2f2 50%, #9cf2f8 55%, #9bf1fe 60%, #9df0ff 65%, #a0efff 70%, #a4eeff 75%, #aaecff 80%, #b1ebff 85%, #b8e9ff 90%, #c1e7ff 95%, #c9e5ff 100%);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-radius: 30px;
+        padding: 10px 0px;
+    }
+    nav div a{
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    }
+
+    main div{
+        width: 100vw;
+        padding: 20px 0px;
+        background-color: rgba(207, 242, 237, 0.955);
+         border-style: solid;
+         border-radius: 30px;
+         display: grid;
+         box-sizing: border-box;
+         grid-template-areas:
+           "seccion"
+           "media"
+           "descripcion"
+           "articulo"
+         ;
+         grid-gap: 10px;
+        }
+       .seccion {
+           grid-area: seccion;
+           width: 100vw;
+           font-size: 25px;
+           text-align: center;
+           padding: 0px 5px;
+           background-color: rgba(121, 121, 169, 0.815);
+          border: solid 3px rgba(37, 167, 190, 0.704);
+           border-radius: 20px;
+           box-sizing: border-box;
+       }
+       .media {
+           grid-area: media;
+           width: 150px;
+           height: 150px;
+           position: relative;
+           left: 85px;
+           display: flex;
+           justify-items: center;
+       }
+       .articulo {
+           grid-area: articulo;
+           font-size: 15px;
+           padding: 5px 10px;
+           text-align: left;
+       }
+       .descripcion {
+           grid-area: descripcion;
+           padding: 0px 5px;
+       }
+       ul {
+           width: 100vw;
+           display: flex;
+           flex-direction: row;
+           list-style: none;
+       }
+       .contactos {
+        width: 30px;
+        height: 30px;
+        padding: 16px 6px;
+    }
+      ul li h3 {
+          font-size: 19px;
+          position: relative;
+          top: 15px;
+      }
+      
+      .carrito-compra {
+        width: 30px;
+        height: 35px;
+        box-sizing: 1px;
+        border: none;
+        padding: 3px;
+        background-color: rgba(10, 85, 125, 0.7);
+        border-radius: 50%;   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 85vw;
+        bottom: 7vh;
+        box-shadow: 1px 3px 3px 3px rgba(14, 155, 17, 0.5);  
+    }
+    .carrito-compra img {
+        width: 20px;
+        height: 25px;
+        position: relative;
+        right: 2px;
+    }
+    /*------SECCION LISTA DE COMPRAS-----*/
+
+.body-carrito {
+    width: 100vw;
+    background-image: radial-gradient(circle at 104.56% 69.86%, #00beec 0, #00bcf3 5%, #00baf9 10%, #00b7fd 15%, #39b4ff 20%, #58b1ff 25%, #70adff 30%, #85aaff 35%, #98a5fc 40%, #a9a1f8 45%, #b99df2 50%, #c799eb 55%, #d395e3 60%, #de91da 65%, #e78ed0 70%, #ef8bc5 75%, #f589bb 80%, #f988af 85%, #fc87a4 90%, #fd8899 95%, #fd898e 100%);
+    display: grid;
+    grid-template-areas: 
+    "header-carrito"
+    "main-carrito"
+    "footer-carrito"
+    ;
+    grid-gap: 3px;
+}
+
+.body-carrito header {
+    grid-area: header-carrito;
+    display: grid;
+    grid-template-areas: 
+     "logo titulo  logo-seguro"
+     " logo  titulo seguro"
+    ;
+    grid-gap: 5px;
+}
+.titulo-carrito{
+  grid-area: titulo;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icono-tienda{
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icono-tienda img {
+    width: 50px;
+    height: 50px;
+}
+.seguro-carrito{
+    grid-area: seguro;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.logo-sitio-seguro-carrito{
+     grid-area: logo-seguro;
+     display: flex;
+     justify-content: center;
+}
+.logo-sitio-seguro-carrito img {
+    width: 50px;
+    height: 50px;
+}
+
+           /*---MAIN DEL CARRITO---*/
+
+.body-carrito main {
+  grid-area: main-carrito; 
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.body-carrito main h2 {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+       /*---FOOTER DEL CARRITO---*/
+
+.body-carrito footer {
+   grid-area: footer-carrito;
+} 
+.tabla {
+     display: flex;
+     justify-content: start;
+     align-items: flex-end;
+     }
+.medios-de-pago {
+     width: 100px;
+     height: 40px;
+     }
+     .body-correo {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: radial-gradient(circle at 9.82% 60.77%, #42be9f 0, #2dbea9 5%, #09bfb4 10%, #00bebe 15%, #00bec8 20%, #00bdd1 25%, #00bcda 30%, #00bbe2 35%, #00b9e8 40%, #1bb7ee 45%, #3cb5f2 50%, #54b2f5 55%, #69aff6 60%, #7cacf6 65%, #8da8f4 70%, #9ea5f1 75%, #ada1ed 80%, #ba9de7 85%, #c799e1 90%, #d296d9 95%, #db93d0 100%);
+    }    
+                /*------SECCION CORREO------*/
+
+    .seccion-correo {
+        width: 100vw;
+        height: 100vh;
+        background-color: #431f89;
+        border-radius: 15px;
+        font-size: 18px;
+        padding: 12px 3px;
+        display: grid;
+        grid-template-areas: 
+        "consulta consulta"
+        "nombre nombre"
+        "apellido apellido"
+        "correo correo"
+        "mensaje mensaje"
+         "enviar reset"
+         "regresar regresar"
+        ;
+        grid-gap: 15px;
+        box-shadow: 7px 13px 37px #000;
+    }
+    .nombre {
+        grid-area: nombre;
+        font-size: 18px;
+        border-color: #9df2f2;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #431f89;
+        border-radius: 10px;
+    }
+    .apellido {
+        grid-area: apellido;
+        font-size: 18px;
+        border-color: #9df2f2;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #431f89;
+        border-radius: 10px;
+    }
+    .correo {
+        grid-area: correo;
+        font-size: 18px;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-color: #9df2f2;
+        background-color: #431f89;
+    }
+    .mensaje {
+        grid-area: mensaje;
+        width: 100%;
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 10px;
+        border-color: #9df2f2;
+        background-color: #431f89;
+        height: 250px;
+    } 
+    .enviar {
+        grid-area: enviar;
+        font-size: 15px;
+        border-radius: 10px;
+        width: 80px;
+        height: 30px;
+        text-decoration: none;
+    }
+    .reset {
+        grid-area: reset;
+        font-size: 15px;
+        height: 30px;
+        border-radius: 10px;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        justify-self: end;
+    }
+    .titulo-consulta {
+     grid-area: consulta;
+     color: #c1e7ff;
+     display: flex;
+     justify-content: center;
+     font-family: 'Courier New', Courier, monospace;
+    }
+    .regresar-index {
+        grid-area: regresar;
+        width: 70px;
+        height: 25px;
+        color: black;
+        background-color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        border-color: white;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        justify-self: end;
+    }                
+}
+
+/*====== VISUALIZACION PARA TABLET =======*/
+
+@media screen and (min-width: 700px) {
+
+    .body-index {
+        background-image: linear-gradient(25deg, #ffdeb2 0, #fae0b1 3.33%, #f4e3b0 6.67%, #ece5b1 10%, #e5e7b3 13.33%, #dde9b6 16.67%, #d5ebb9 20%, #cdedbe 23.33%, #c6eec3 26.67%, #beefc9 30%, #b7f0cf 33.33%, #b0f1d6 36.67%, #aaf2dd 40%, #a4f2e4 43.33%, #a0f2eb 46.67%, #9df2f2 50%, #9bf2f9 53.33%, #9cf1ff 56.67%, #9df0ff 60%, #a1efff 63.33%, #a6edff 66.67%, #acecff 70%, #b3eaff 73.33%, #bce8ff 76.67%, #c5e6ff 80%, #cee3ff 83.33%, #d7e1ff 86.67%, #e1dfff 90%, #eadcff 93.33%, #f2daff 96.67%, #fad8ff 100%);
+        width: 100vw;
+    }
+    .body-hogar{
+        width: 100vw;
+        background-image: linear-gradient(25deg, #ffdeb2 0, #fae0b1 3.33%, #f4e3b0 6.67%, #ece5b1 10%, #e5e7b3 13.33%, #dde9b6 16.67%, #d5ebb9 20%, #cdedbe 23.33%, #c6eec3 26.67%, #beefc9 30%, #b7f0cf 33.33%, #b0f1d6 36.67%, #aaf2dd 40%, #a4f2e4 43.33%, #a0f2eb 46.67%, #9df2f2 50%, #9bf2f9 53.33%, #9cf1ff 56.67%, #9df0ff 60%, #a1efff 63.33%, #a6edff 66.67%, #acecff 70%, #b3eaff 73.33%, #bce8ff 76.67%, #c5e6ff 80%, #cee3ff 83.33%, #d7e1ff 86.67%, #e1dfff 90%, #eadcff 93.33%, #f2daff 96.67%, #fad8ff 100%);
+    }
+    .contenedor {
+        
+        width: 100vw;
+        background-image: linear-gradient(25deg, #ffdeb2 0, #fae0b1 3.33%, #f4e3b0 6.67%, #ece5b1 10%, #e5e7b3 13.33%, #dde9b6 16.67%, #d5ebb9 20%, #cdedbe 23.33%, #c6eec3 26.67%, #beefc9 30%, #b7f0cf 33.33%, #b0f1d6 36.67%, #aaf2dd 40%, #a4f2e4 43.33%, #a0f2eb 46.67%, #9df2f2 50%, #9bf2f9 53.33%, #9cf1ff 56.67%, #9df0ff 60%, #a1efff 63.33%, #a6edff 66.67%, #acecff 70%, #b3eaff 73.33%, #bce8ff 76.67%, #c5e6ff 80%, #cee3ff 83.33%, #d7e1ff 86.67%, #e1dfff 90%, #eadcff 93.33%, #f2daff 96.67%, #fad8ff 100%);
+        display: grid;
+        grid-template-areas: 
+         "header"
+         "main"
+         "footer"
+        ;
+        grid-gap: 5px;
+    }
+    header{
+        width: 100vw;
+        grid-area: header;
+        display: grid;
+        grid-template-areas: 
+        "logo-inicio encabezado"
+        "nav nav"
+        ;
+        grid-gap: 10px 0px;
+        background-image: url('../DESAFIO-04/media/personas.jpg');
+        background-size: contain;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+    .encabezado {
+        grid: encabezado;
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 40px;
+       -webkit-text-stroke: 6px rgb(24, 173, 173);
+       -webkit-text-fill-color: transparent;
+       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.442);
+        padding: 10px 0px; 
+    }
+    
+    .logo-inicio{
+        grid-area: logo-inicio;
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
+        padding: 5px;
+        transition: all .3s ease-in-out;
+    }
+    .logo {
+        width: 90px;
+        height: 90px;
+        border-style: solid;
+        border-radius: 40px;
+    }
+    nav {
+        grid-area: nav;
+        width: 100vw;
+        background-image: linear-gradient(85deg, #d9eab7 0, #d2ecbb 5%, #caedc0 10%, #c3efc5 15%, #bcf0cb 20%, #b5f1d1 25%, #aef1d7 30%, #a9f2de 35%, #a4f2e5 40%, #a0f2eb 45%, #9df2f2 50%, #9cf2f8 55%, #9bf1fe 60%, #9df0ff 65%, #a0efff 70%, #a4eeff 75%, #aaecff 80%, #b1ebff 85%, #b8e9ff 90%, #c1e7ff 95%, #c9e5ff 100%);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-radius: 30px;
+        padding: 10px 0;
+    }
+    nav div a{
+        font-size: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    }
+    main div{
+        width: 100vw;
+        padding: 20px 0px;
+        background-color: rgba(207, 242, 237, 0.955);
+         border-style: solid;
+         border-radius: 30px;
+         border-color: rgba(240, 196, 143, 0.41);
+         display: grid;
+         grid-template-areas: 
+         "seccion seccion"
+         "media descripcion"
+         "media articulo"
+         ;
+         grid-gap: 10px;
+        }
+       .seccion {
+           grid-area: seccion;
+           width: 100vw;
+           font-size: 40px;
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+           text-align: center;
+           padding: 0px 5px;
+           background-color: rgba(121, 121, 169, 0.815);
+          border: solid 3px rgba(37, 167, 190, 0.704);
+           border-radius: 20px;
+           box-sizing: border-box;
+       }
+       .media {
+           grid-area: media;
+           width: 170px;
+           height: 170px;
+           position: relative;
+           left: 7px;
+       }
+       .articulo {
+           grid-area: articulo;
+           font-size: 25px;
+           padding: 5px 10px;
+           text-align: left;
+       }
+       .descripcion {
+           grid-area: descripcion;
+           font-size: 30px;
+           padding: 0px 5px;
+       }
+       ul {
+           width: 100vw;
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+           list-style: none;
+       }
+       .contactos {
+        width: 30px;
+        height: 30px;
+        padding: 16px 6px;
+    }
+      ul li h3 {
+          font-size: 19px;
+          position: relative;
+          top: 15px;
+      } 
+
+    .carrito-compra {
+        width: 50px;
+        height: 55px;
+        box-sizing: 1px;
+        border: none;
+        padding: 3px;
+        background-color: rgba(10, 85, 125, 0.7);
+        border-radius: 50%;   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 0px;
+        right: 110px;
+        box-shadow: 1px 3px 3px 3px rgba(14, 155, 17, 0.5);  
+    }
+    .carrito-compra img {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        right: 2px;
+    }
+    /*------SECCION LISTA DE COMPRAS-----*/
+
+.body-carrito {
+    width: 100vw;
+    background-image: radial-gradient(circle at 104.56% 69.86%, #00beec 0, #00bcf3 5%, #00baf9 10%, #00b7fd 15%, #39b4ff 20%, #58b1ff 25%, #70adff 30%, #85aaff 35%, #98a5fc 40%, #a9a1f8 45%, #b99df2 50%, #c799eb 55%, #d395e3 60%, #de91da 65%, #e78ed0 70%, #ef8bc5 75%, #f589bb 80%, #f988af 85%, #fc87a4 90%, #fd8899 95%, #fd898e 100%);
+    display: grid;
+    grid-template-areas: 
+    "header-carrito"
+    "main-carrito"
+    "footer-carrito"
+    ;
+    grid-gap: 3px;
+}
+
+.body-carrito header {
+    grid-area: header-carrito;
+    display: grid;
+    grid-template-areas: 
+     "logo titulo titulo logo-seguro"
+     " logo titulo titulo seguro"
+    ;
+    grid-gap: 15px;
+}
+.titulo-carrito{
+  grid-area: titulo;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icono-tienda{
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icono-tienda img {
+    width: 60px;
+    height: 60px;
+}
+.seguro-carrito{
+    grid-area: seguro;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+}
+.logo-sitio-seguro-carrito{
+     grid-area: logo-seguro;
+     display: flex;
+     justify-content: center;
+     align-items: flex-end;
+}
+.logo-sitio-seguro-carrito img {
+    width: 55px;
+    height: 55px;
+}
+
+           /*---MAIN DEL CARRITO---*/
+
+.body-carrito main {
+  grid-area: main-carrito; 
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+       /*---FOOTER DEL CARRITO---*/
+
+.body-carrito footer {
+   grid-area: footer-carrito;
+} 
+.tabla {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.medios-de-pago {
+   width: 200px;
+   height: 40px;
+    }
+
+              /*------SECCION CORREO------*/
+
+    .body-correo {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: radial-gradient(circle at 9.82% 60.77%, #42be9f 0, #2dbea9 5%, #09bfb4 10%, #00bebe 15%, #00bec8 20%, #00bdd1 25%, #00bcda 30%, #00bbe2 35%, #00b9e8 40%, #1bb7ee 45%, #3cb5f2 50%, #54b2f5 55%, #69aff6 60%, #7cacf6 65%, #8da8f4 70%, #9ea5f1 75%, #ada1ed 80%, #ba9de7 85%, #c799e1 90%, #d296d9 95%, #db93d0 100%);
+    }    
+               
+    .seccion-correo {
+        width: 500px;
+        height: 450px;
+        margin-top: 200px;
+        background-color: #431f89;
+        border-radius: 15px;
+        font-size: 18px;
+        padding: 30px;
+        display: grid;
+        grid-template-areas: 
+        "consulta consulta consulta"
+        "nombre apellido apellido"
+        "correo correo correo"
+        "mensaje  mensaje mensaje"
+         "enviar reset regresar"
+        ;
+        grid-gap: 15px;
+        box-shadow: 7px 13px 37px #000;
+    }
+    .nombre {
+        grid-area: nombre;
+        font-size: 18px;
+        border-color: #9df2f2;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #431f89;
+        border-radius: 10px;
+    }
+    .apellido {
+        grid-area: apellido;
+        font-size: 18px;
+        border-color: #9df2f2;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #431f89;
+        border-radius: 10px;
+    }
+    .correo {
+        grid-area: correo;
+        font-size: 18px;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-color: #9df2f2;
+        background-color: #431f89;
+    }
+    .mensaje {
+        grid-area: mensaje;
+        width: 100%;
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 10px;
+        border-color: #9df2f2;
+        background-color: #431f89;
+        height: 250px;
+    } 
+    .enviar {
+        grid-area: enviar;
+        font-size: 20px;
+        border-radius: 10px;
+        width: 70px;
+        text-decoration: none;
+    }
+    .reset {
+        grid-area: reset;
+        font-size: 20px;
+        border-radius: 10px;
+        width: 90px;
+       position: relative;
+       right: 20vw ;
+    }
+    .titulo-consulta {
+     grid-area: consulta;
+     color: #c1e7ff;
+     display: flex;
+     justify-content: center;
+     font-family: 'Courier New', Courier, monospace;
+    }
+    .regresar-index {
+        grid-area: regresar;
+        width: 85px;
+        color: black;
+        background-color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        border-color: white;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }                
+}
+
+/*====== VISUALIZACION PARA PC/LAPTOP =======*/
+
+@media screen and (min-width: 1020px) {
+
+    .body-index {
+        width: 100vw;
+        background-image: linear-gradient(25deg, #ffdeb2 0, #fae0b1 3.33%, #f4e3b0 6.67%, #ece5b1 10%, #e5e7b3 13.33%, #dde9b6 16.67%, #d5ebb9 20%, #cdedbe 23.33%, #c6eec3 26.67%, #beefc9 30%, #b7f0cf 33.33%, #b0f1d6 36.67%, #aaf2dd 40%, #a4f2e4 43.33%, #a0f2eb 46.67%, #9df2f2 50%, #9bf2f9 53.33%, #9cf1ff 56.67%, #9df0ff 60%, #a1efff 63.33%, #a6edff 66.67%, #acecff 70%, #b3eaff 73.33%, #bce8ff 76.67%, #c5e6ff 80%, #cee3ff 83.33%, #d7e1ff 86.67%, #e1dfff 90%, #eadcff 93.33%, #f2daff 96.67%, #fad8ff 100%);
+    
+    }
+    .body-hogar{
+        width: 100vw;
+        background-image: linear-gradient(25deg, #ffdeb2 0, #fae0b1 3.33%, #f4e3b0 6.67%, #ece5b1 10%, #e5e7b3 13.33%, #dde9b6 16.67%, #d5ebb9 20%, #cdedbe 23.33%, #c6eec3 26.67%, #beefc9 30%, #b7f0cf 33.33%, #b0f1d6 36.67%, #aaf2dd 40%, #a4f2e4 43.33%, #a0f2eb 46.67%, #9df2f2 50%, #9bf2f9 53.33%, #9cf1ff 56.67%, #9df0ff 60%, #a1efff 63.33%, #a6edff 66.67%, #acecff 70%, #b3eaff 73.33%, #bce8ff 76.67%, #c5e6ff 80%, #cee3ff 83.33%, #d7e1ff 86.67%, #e1dfff 90%, #eadcff 93.33%, #f2daff 96.67%, #fad8ff 100%);
+    }
+    .contenedor {    
+        width: 100vw;
+        background-image: linear-gradient(25deg, #ffdeb2 0, #fae0b1 3.33%, #f4e3b0 6.67%, #ece5b1 10%, #e5e7b3 13.33%, #dde9b6 16.67%, #d5ebb9 20%, #cdedbe 23.33%, #c6eec3 26.67%, #beefc9 30%, #b7f0cf 33.33%, #b0f1d6 36.67%, #aaf2dd 40%, #a4f2e4 43.33%, #a0f2eb 46.67%, #9df2f2 50%, #9bf2f9 53.33%, #9cf1ff 56.67%, #9df0ff 60%, #a1efff 63.33%, #a6edff 66.67%, #acecff 70%, #b3eaff 73.33%, #bce8ff 76.67%, #c5e6ff 80%, #cee3ff 83.33%, #d7e1ff 86.67%, #e1dfff 90%, #eadcff 93.33%, #f2daff 96.67%, #fad8ff 100%);
+        grid-template-areas: 
+         "header"
+         "main"
+         "footer"
+        ;
+        grid-gap: 5px 0px;
+    }
+    header{
+        width: 100vw;
+        grid-area: header;
+        display: grid;
+        grid-template-areas: 
+        "logo-inicio encabezado"
+        "nav nav"
+        ;
+        grid-gap: 10px 0px;
+        background-image: url('../DESAFIO-04/media/personas.jpg');
+        background-size: contain;
+        box-sizing: border-box;
+    }
+    .encabezado {
+        grid-area: encabezado;
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 40px;
+       -webkit-text-stroke: 6px rgb(24, 173, 173);
+       -webkit-text-fill-color: transparent;
+       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.442);
+        padding: 10px 0px; 
+    }
+    .logo-inicio{
+        grid-area: logo-inicio;
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
+        padding: 5px;
+        transition: all .3s ease-in-out;
+    }
+    .logo {
+        width: 95px;
+        height: 95px;
+        border-style: solid;
+        border-radius: 40px;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+    nav{
+        grid-area: nav;
+        width: 100vw;
+        background-image: linear-gradient(85deg, #d9eab7 0, #d2ecbb 5%, #caedc0 10%, #c3efc5 15%, #bcf0cb 20%, #b5f1d1 25%, #aef1d7 30%, #a9f2de 35%, #a4f2e5 40%, #a0f2eb 45%, #9df2f2 50%, #9cf2f8 55%, #9bf1fe 60%, #9df0ff 65%, #a0efff 70%, #a4eeff 75%, #aaecff 80%, #b1ebff 85%, #b8e9ff 90%, #c1e7ff 95%, #c9e5ff 100%);
+    }
+    nav div a{
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        transition: all .3s ease-in-out;
+    }
+    main div{
+        width: 100vw;
+        background-color: rgba(207, 242, 237, 0.955);
+         border-style: solid;
+         border-radius: 30px;
+         border-color: rgba(240, 196, 143, 0.41);
+         display: grid;
+         grid-template-areas: 
+         "seccion seccion"
+         "media descripcion"
+         "media articulo"
+         ;
+         grid-gap: 10px;
+        }
+       .seccion {
+           grid-area: seccion;
+           width: 100vw;
+           font-size: 45px;
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+           text-align: center;
+           padding: 0px 5px;
+           background-color: rgba(121, 121, 169, 0.815);
+          border: solid 3px rgba(37, 167, 190, 0.704);
+           border-radius: 20px;
+           box-sizing: border-box;
+       }
+       .media {
+           grid-area: media;
+           width: 400px;
+           height: 400px;
+           position: relative;
+           left: 7px;
+       }
+       .articulo {
+           grid-area: articulo;
+           font-size: 28px;
+           padding: 5px 10px;
+           text-align: left;
+       }
+       .descripcion {
+           grid-area: descripcion;
+           font-size: 30px;
+           padding: 0px 5px;
+       }
+       .navbar-personal {
+           width: 100vw;
+           display: flex;
+           flex-direction: row;
+           justify-content: space-around;
+           list-style: none;
+       }
+       .contactos {
+        width: 35px;
+        height: 35px;
+        padding: 16px 6px;
+        transition: all .4s ease-in-out;
+    }
+      ul li h3 {
+          font-size: 25px;
+          position: relative;
+          top: 15px;
+      } 
+       
+      .carrito-compra {
+          width: 80px;
+          height: 80px;
+          box-sizing: 1px;
+          border: none;
+          padding: 3px;
+          background-color: rgba(10, 85, 125, 0.7);
+          border-radius: 50%;   
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: fixed;
+          left: 95vw;
+          bottom: 1vh;
+          box-shadow: 1px 3px 3px 3px rgba(14, 155, 17, 0.5);  
+        
+          transition: all .3s ease-in-out;
+           
+      }
+      .carrito-compra img {
+          width: 50px;
+          height: 50px;
+          position: relative;
+          right: 3px;
+      }
+     /*------SECCION LISTA DE COMPRAS-----*/
+
+     .body-carrito {
+         width: 100vw;
+         background-image: radial-gradient(circle at 104.56% 69.86%, #00beec 0, #00bcf3 5%, #00baf9 10%, #00b7fd 15%, #39b4ff 20%, #58b1ff 25%, #70adff 30%, #85aaff 35%, #98a5fc 40%, #a9a1f8 45%, #b99df2 50%, #c799eb 55%, #d395e3 60%, #de91da 65%, #e78ed0 70%, #ef8bc5 75%, #f589bb 80%, #f988af 85%, #fc87a4 90%, #fd8899 95%, #fd898e 100%);
+         display: grid;
+         grid-template-areas: 
+         "header-carrito"
+         "main-carrito"
+         "footer-carrito"
+         ;
+         grid-gap: 3px;
+     }
+    
+     .body-carrito header {
+         grid-area: header-carrito;
+         display: grid;
+         grid-template-areas: 
+          "logo titulo titulo logo-seguro"
+          " logo titulo titulo seguro"
+         ;
+         grid-gap: 5px;
+     }
+     .titulo-carrito{
+       grid-area: titulo;
+       font-size: 30px;
+       position: relative;
+       top: 40px;
+       right: 40px;
+     }
+     .icono-tienda{
+       grid-area: logo;
+       display: flex;
+       justify-content: center;
+       align-items: end;
+     }
+     .icono-tienda img {
+         width: 100px;
+         height: 100px;
+     }
+     .seguro-carrito{
+         grid-area: seguro;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+     }
+     .logo-sitio-seguro-carrito{
+          grid-area: logo-seguro;
+          display: flex;
+          justify-content: center;
+     }
+     .logo-sitio-seguro-carrito img {
+         width: 100px;
+         height: 100px;
+     }
+
+                /*---MAIN DEL CARRITO---*/
+    
+     .body-carrito main {
+       grid-area: main-carrito; 
+       display: flex;
+       flex-direction: column;
+       justify-content: start;
+    }
+    
+            /*---FOOTER DEL CARRITO---*/
+
+    .body-carrito footer {
+        grid-area: footer-carrito;
+    } 
+    .tabla {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .medios-de-pago {
+        width: 300px;
+        height: 80px;
+    }
+
+   /*====== HOVER UTILIZADOS ======*/
+
+    .logo:hover {
+        box-sizing: 5px;
+        border: none;
+        padding: 7px 0px;
+        border-radius: 30px;
+        background-color: aliceblue ;
+        box-shadow: 1px 3px 3px 3px rgba(76, 178, 203, 0.5);
+    }
+
+   nav div a:hover {
+       box-sizing: 5px;
+       border: none;
+       padding: 7px 0px;
+       border-radius: 30px;
+       background-color: aliceblue ;
+       box-shadow: 1px 3px 3px 3px rgba(76, 178, 203, 0.5);  
+       transform: scale(1.2);
+   }
+
+   .carrito-compra:hover {
+    transform: scale(1.3);
+     }
+ 
+    .contactos:hover {
+    transform: scale(1.3);
+     }
+
+               /*------SECCION CORREO------*/
+     
+    .body-correo {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: radial-gradient(circle at 9.82% 60.77%, #42be9f 0, #2dbea9 5%, #09bfb4 10%, #00bebe 15%, #00bec8 20%, #00bdd1 25%, #00bcda 30%, #00bbe2 35%, #00b9e8 40%, #1bb7ee 45%, #3cb5f2 50%, #54b2f5 55%, #69aff6 60%, #7cacf6 65%, #8da8f4 70%, #9ea5f1 75%, #ada1ed 80%, #ba9de7 85%, #c799e1 90%, #d296d9 95%, #db93d0 100%);
+    }    
+               
+    .seccion-correo {
+        width: 500px;
+        height: 450px;
+        margin-top: 200px;
+        background-color: #431f89;
+        border-radius: 15px;
+        font-size: 18px;
+        padding: 30px;
+        display: grid;
+        grid-template-areas: 
+        "consulta consulta consulta"
+        "nombre apellido apellido"
+        "correo correo correo"
+        "mensaje  mensaje mensaje"
+         "enviar reset regresar"
+        ;
+        grid-gap: 15px;
+        box-shadow: 7px 13px 37px #000;
+    }
+    .nombre {
+        grid-area: nombre;
+        font-size: 18px;
+        border-color: #9df2f2;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #431f89;
+        border-radius: 10px;
+    }
+    .apellido {
+        grid-area: apellido;
+        font-size: 18px;
+        border-color: #9df2f2;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #431f89;
+        border-radius: 10px;
+    }
+    .correo {
+        grid-area: correo;
+        font-size: 18px;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-color: #9df2f2;
+        background-color: #431f89;
+    }
+    .mensaje {
+        grid-area: mensaje;
+        width: 100%;
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 10px;
+        border-color: #9df2f2;
+        background-color: #431f89;
+        height: 250px;
+    } 
+    .enviar {
+        grid-area: enviar;
+        font-size: 20px;
+        border-radius: 10px;
+        width: 70px;
+        text-decoration: none;
+    }
+    .reset {
+        grid-area: reset;
+        font-size: 20px;
+        border-radius: 10px;
+        width: 90px;
+        position: relative;
+        right: 170px;
+    }
+    .titulo-consulta {
+     grid-area: consulta;
+     color: #c1e7ff;
+     display: flex;
+     justify-content: center;
+     font-family: 'Courier New', Courier, monospace;
+    }
+    .regresar-index {
+        grid-area: regresar;
+        width: 85px;
+        color: black;
+        background-color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        border-color: white;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }                     
+}
