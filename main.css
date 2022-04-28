@@ -288,52 +288,46 @@
          background-image: radial-gradient(circle at 9.82% 60.77%, #42be9f 0, #2dbea9 5%, #09bfb4 10%, #00bebe 15%, #00bec8 20%, #00bdd1 25%, #00bcda 30%, #00bbe2 35%, #00b9e8 40%, #1bb7ee 45%, #3cb5f2 50%, #54b2f5 55%, #69aff6 60%, #7cacf6 65%, #8da8f4 70%, #9ea5f1 75%, #ada1ed 80%, #ba9de7 85%, #c799e1 90%, #d296d9 95%, #db93d0 100%);
      }    
 
-    .seccion-correo {
-        width: 100vw;
-        height: 100vh;
+     .body-correo .container {
+        width: 310px;
+        height: 600px;
+        margin-top: 250px;
         background-color: #431f89;
         border-radius: 15px;
         font-size: 18px;
-        padding: 12px 3px;
-        display: grid;
-        grid-template-areas: 
-        "consulta consulta"
-        "nombre nombre"
-        "apellido apellido"
-        "correo correo"
-        "mensaje mensaje"
-         "enviar reset"
-         "regresar regresar"
-        ;
-        grid-gap: 15px;
+        padding: 30px;
         box-shadow: 7px 13px 37px #000;
     }
+    .titulo-consulta {
+        display: flex;
+        justify-content: center;
+        padding: 5px 0px;
+        font-size: 30px;
+        color: #9cf1ff;
+    }    
     .nombre {
-        grid-area: nombre;
-        font-size: 18px;
+        font-size: 20px;
         border-color: #9df2f2;
         font-family: Arial, Helvetica, sans-serif;
         background-color: #431f89;
         border-radius: 10px;
     }
     .apellido {
-        grid-area: apellido;
-        font-size: 18px;
+        font-size: 20px;
         border-color: #9df2f2;
         font-family: Arial, Helvetica, sans-serif;
         background-color: #431f89;
         border-radius: 10px;
     }
     .correo {
-        grid-area: correo;
-        font-size: 18px;
+        font-size: 20px;
         border-radius: 10px;
         font-family: Arial, Helvetica, sans-serif;
         border-color: #9df2f2;
         background-color: #431f89;
+        box-sizing: border-box;
     }
     .mensaje {
-        grid-area: mensaje;
         width: 100%;
         font-size: 22px;
         font-family: Arial, Helvetica, sans-serif;
@@ -342,45 +336,11 @@
         background-color: #431f89;
         height: 250px;
     } 
-    .enviar {
-        grid-area: enviar;
-        font-size: 15px;
-        border-radius: 10px;
-        width: 80px;
-        height: 30px;
-        text-decoration: none;
-    }
-    .reset {
-        grid-area: reset;
-        font-size: 15px;
-        height: 30px;
-        border-radius: 10px;
-        width: 80px;
+    .botones-correo{ 
         display: flex;
-        justify-content: center;
-        justify-self: end;
+      flex-direction: row;
+      justify-content: space-between;
     }
-    .titulo-consulta {
-     grid-area: consulta;
-     color: #c1e7ff;
-     display: flex;
-     justify-content: center;
-     font-family: 'Courier New', Courier, monospace;
-    }
-    .regresar-index {
-        grid-area: regresar;
-        width: 70px;
-        height: 25px;
-        color: black;
-        background-color: white;
-        text-decoration: none;
-        border-radius: 10px;
-        border-color: white;
-        font-size: 15px;
-        display: flex;
-        justify-content: center;
-        justify-self: end;
-    }                
 }
 
 /*====== VISUALIZACION PARA TABLET =======*/
@@ -655,51 +615,47 @@
         background-image: radial-gradient(circle at 9.82% 60.77%, #42be9f 0, #2dbea9 5%, #09bfb4 10%, #00bebe 15%, #00bec8 20%, #00bdd1 25%, #00bcda 30%, #00bbe2 35%, #00b9e8 40%, #1bb7ee 45%, #3cb5f2 50%, #54b2f5 55%, #69aff6 60%, #7cacf6 65%, #8da8f4 70%, #9ea5f1 75%, #ada1ed 80%, #ba9de7 85%, #c799e1 90%, #d296d9 95%, #db93d0 100%);
     }    
                
-    .seccion-correo {
+    
+    .body-correo .container {
         width: 500px;
-        height: 450px;
-        margin-top: 200px;
+        height: 500px;
+        margin-top: 250px;
         background-color: #431f89;
         border-radius: 15px;
         font-size: 18px;
         padding: 30px;
-        display: grid;
-        grid-template-areas: 
-        "consulta consulta consulta"
-        "nombre apellido apellido"
-        "correo correo correo"
-        "mensaje  mensaje mensaje"
-         "enviar reset regresar"
-        ;
-        grid-gap: 15px;
         box-shadow: 7px 13px 37px #000;
     }
+    .titulo-consulta {
+        display: flex;
+        justify-content: center;
+        padding: 5px 0px;
+        font-size: 40px;
+        color: #9cf1ff;
+    }    
     .nombre {
-        grid-area: nombre;
-        font-size: 18px;
+        font-size: 20px;
         border-color: #9df2f2;
         font-family: Arial, Helvetica, sans-serif;
         background-color: #431f89;
         border-radius: 10px;
     }
     .apellido {
-        grid-area: apellido;
-        font-size: 18px;
+        font-size: 20px;
         border-color: #9df2f2;
         font-family: Arial, Helvetica, sans-serif;
         background-color: #431f89;
         border-radius: 10px;
     }
     .correo {
-        grid-area: correo;
-        font-size: 18px;
+        font-size: 20px;
         border-radius: 10px;
         font-family: Arial, Helvetica, sans-serif;
         border-color: #9df2f2;
         background-color: #431f89;
+        box-sizing: border-box;
     }
     .mensaje {
-        grid-area: mensaje;
         width: 100%;
         font-size: 22px;
         font-family: Arial, Helvetica, sans-serif;
@@ -708,40 +664,11 @@
         background-color: #431f89;
         height: 250px;
     } 
-    .enviar {
-        grid-area: enviar;
-        font-size: 20px;
-        border-radius: 10px;
-        width: 70px;
-        text-decoration: none;
-    }
-    .reset {
-        grid-area: reset;
-        font-size: 20px;
-        border-radius: 10px;
-        width: 90px;
-       position: relative;
-       right: 20vw ;
-    }
-    .titulo-consulta {
-     grid-area: consulta;
-     color: #c1e7ff;
-     display: flex;
-     justify-content: center;
-     font-family: 'Courier New', Courier, monospace;
-    }
-    .regresar-index {
-        grid-area: regresar;
-        width: 85px;
-        color: black;
-        background-color: white;
-        text-decoration: none;
-        border-radius: 10px;
-        border-color: white;
-        font-size: 20px;
+    .botones-correo{ 
         display: flex;
-        justify-content: center;
-    }                
+      flex-direction: column;
+      justify-content: space-between;
+    }           
 } 
 
 /*====== VISUALIZACION PARA PC/LAPTOP =======*/
@@ -1037,53 +964,48 @@
         justify-content: center;
         align-items: center;
         background-image: radial-gradient(circle at 9.82% 60.77%, #42be9f 0, #2dbea9 5%, #09bfb4 10%, #00bebe 15%, #00bec8 20%, #00bdd1 25%, #00bcda 30%, #00bbe2 35%, #00b9e8 40%, #1bb7ee 45%, #3cb5f2 50%, #54b2f5 55%, #69aff6 60%, #7cacf6 65%, #8da8f4 70%, #9ea5f1 75%, #ada1ed 80%, #ba9de7 85%, #c799e1 90%, #d296d9 95%, #db93d0 100%);
+    }
+    .titulo-consulta {
+        display: flex;
+        justify-content: center;
+        padding: 5px 0px;
+        font-size: 40px;
+        color: #9cf1ff;
     }    
                
-    .seccion-correo {
-        width: 500px;
-        height: 450px;
-        margin-top: 200px;
+    .body-correo .container {
+        width: 550px;
+        height: 460px;
+        margin-top: 250px;
         background-color: #431f89;
         border-radius: 15px;
         font-size: 18px;
         padding: 30px;
-        display: grid;
-        grid-template-areas: 
-        "consulta consulta consulta"
-        "nombre apellido apellido"
-        "correo correo correo"
-        "mensaje  mensaje mensaje"
-         "enviar reset regresar"
-        ;
-        grid-gap: 15px;
         box-shadow: 7px 13px 37px #000;
     }
     .nombre {
-        grid-area: nombre;
-        font-size: 18px;
+        font-size: 20px;
         border-color: #9df2f2;
         font-family: Arial, Helvetica, sans-serif;
         background-color: #431f89;
         border-radius: 10px;
     }
     .apellido {
-        grid-area: apellido;
-        font-size: 18px;
+        font-size: 20px;
         border-color: #9df2f2;
         font-family: Arial, Helvetica, sans-serif;
         background-color: #431f89;
         border-radius: 10px;
     }
     .correo {
-        grid-area: correo;
-        font-size: 18px;
+        font-size: 20px;
         border-radius: 10px;
         font-family: Arial, Helvetica, sans-serif;
         border-color: #9df2f2;
         background-color: #431f89;
+        box-sizing: border-box;
     }
     .mensaje {
-        grid-area: mensaje;
         width: 100%;
         font-size: 22px;
         font-family: Arial, Helvetica, sans-serif;
@@ -1092,38 +1014,9 @@
         background-color: #431f89;
         height: 250px;
     } 
-    .enviar {
-        grid-area: enviar;
-        font-size: 20px;
-        border-radius: 10px;
-        width: 70px;
-        text-decoration: none;
-    }
-    .reset {
-        grid-area: reset;
-        font-size: 20px;
-        border-radius: 10px;
-        width: 90px;
-        position: relative;
-        right: 170px;
-    }
-    .titulo-consulta {
-     grid-area: consulta;
-     color: #c1e7ff;
-     display: flex;
-     justify-content: center;
-     font-family: 'Courier New', Courier, monospace;
-    }
-    .regresar-index {
-        grid-area: regresar;
-        width: 85px;
-        color: black;
-        background-color: white;
-        text-decoration: none;
-        border-radius: 10px;
-        border-color: white;
-        font-size: 20px;
+    .botones-correo{ 
         display: flex;
-        justify-content: center;
-    }                     
+      flex-direction: column;
+      justify-content: space-around;
+    }
 }
