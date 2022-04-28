@@ -237,9 +237,30 @@
   flex-direction: column;
   justify-content: start;
 }
-.body-carrito main h2 {
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.container {
+    width: 310px;
+    height: 370px;
+    margin-top: 270px;
+    padding: 20px 10px;
+    background-color: #431f89;
+    border-radius: 15px;
+    position: relative;
+    bottom: 20vh; 
+}
+.compras-carrito h2 {
+    color: bisque;
+    display: flex;
+    justify-content: center;
+    background-color: #9ea5f1;
+    border: solid 1px;
+    box-sizing: border-box;
+}
+.botones-carrito {
+    font-size: 30px;
+    position: relative;
+    top: 50px;
+    display: flex;
+    align-self: center;
 }
        /*---FOOTER DEL CARRITO---*/
 
@@ -248,21 +269,24 @@
 } 
 .tabla {
      display: flex;
-     justify-content: start;
-     align-items: flex-end;
+     justify-content: center;
+     align-items: center;
      }
+     
 .medios-de-pago {
      width: 100px;
      height: 40px;
      }
-     .body-correo {
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: radial-gradient(circle at 9.82% 60.77%, #42be9f 0, #2dbea9 5%, #09bfb4 10%, #00bebe 15%, #00bec8 20%, #00bdd1 25%, #00bcda 30%, #00bbe2 35%, #00b9e8 40%, #1bb7ee 45%, #3cb5f2 50%, #54b2f5 55%, #69aff6 60%, #7cacf6 65%, #8da8f4 70%, #9ea5f1 75%, #ada1ed 80%, #ba9de7 85%, #c799e1 90%, #d296d9 95%, #db93d0 100%);
-    }    
+     
                 /*------SECCION CORREO------*/
+    
+     .body-correo {
+         box-sizing: border-box;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-image: radial-gradient(circle at 9.82% 60.77%, #42be9f 0, #2dbea9 5%, #09bfb4 10%, #00bebe 15%, #00bec8 20%, #00bdd1 25%, #00bcda 30%, #00bbe2 35%, #00b9e8 40%, #1bb7ee 45%, #3cb5f2 50%, #54b2f5 55%, #69aff6 60%, #7cacf6 65%, #8da8f4 70%, #9ea5f1 75%, #ada1ed 80%, #ba9de7 85%, #c799e1 90%, #d296d9 95%, #db93d0 100%);
+     }    
 
     .seccion-correo {
         width: 100vw;
@@ -575,9 +599,31 @@
 
 .body-carrito main {
   grid-area: main-carrito; 
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
+}
+.container {
+    width: 570px;
+    height: 360px;
+    margin-top: 270px;
+    padding: 20px 10px;
+    background-color: #431f89;
+    border-radius: 15px;
+    position: relative;
+    bottom: 20vh; 
+}
+.compras-carrito h2 {
+    color: bisque;
+    display: flex;
+    justify-content: center;
+    background-color: #9ea5f1;
+    border: solid 1px;
+    box-sizing: border-box;
+}
+.botones-carrito {
+    font-size: 30px;
+    position: relative;
+    top: 100px;
+    display: flex;
+    align-self: center;
 }
 
        /*---FOOTER DEL CARRITO---*/
@@ -589,6 +635,10 @@
    display: flex;
    justify-content: center;
    align-items: center;
+}
+.col h2 {
+    display: flex;
+    justify-content: center;
 }
 .medios-de-pago {
    width: 200px;
@@ -860,7 +910,7 @@
          "main-carrito"
          "footer-carrito"
          ;
-         grid-gap: 3px;
+         grid-gap: 7px 0px;
      }
     
      .body-carrito header {
@@ -909,11 +959,31 @@
     
      .body-carrito main {
        grid-area: main-carrito; 
-       display: flex;
-       flex-direction: column;
-       justify-content: start;
     }
-    
+    .container {
+        width: 550px;
+        height: 360px;
+        margin-top: 130px;
+        background-color: #431f89;
+        border-radius: 15px;
+        position: relative;
+        bottom: 10vh;  
+    }
+    .compras-carrito h2 {
+        color: bisque;
+        display: flex;
+        justify-content: center;
+        background-color: #9ea5f1;
+        border: solid 1px;
+        box-sizing: border-box;
+    }
+    .botones-carrito {
+        font-size: 30px;
+        position: relative;
+        top: 120px;
+        display: flex;
+        align-self: center;
+    }
             /*---FOOTER DEL CARRITO---*/
 
     .body-carrito footer {
@@ -921,7 +991,7 @@
     } 
     .tabla {
         display: flex;
-        justify-content: end;
+        justify-content: center;
         align-items: center;
     }
     .medios-de-pago {
