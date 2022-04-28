@@ -977,6 +977,7 @@
         border: solid 1px;
         box-sizing: border-box;
     }
+
     .botones-carrito {
         font-size: 30px;
         position: relative;
@@ -999,7 +1000,7 @@
         height: 80px;
     }
 
-   /*====== HOVER UTILIZADOS ======*/
+   /*====== HOVER UTILIZADOS =======*/
 
     .logo:hover {
         box-sizing: 5px;
