@@ -15,11 +15,18 @@
     .body-index {
         width: 100vw;
         background-image: linear-gradient(25deg, #ffdeb2 0, #fae0b1 3.33%, #f4e3b0 6.67%, #ece5b1 10%, #e5e7b3 13.33%, #dde9b6 16.67%, #d5ebb9 20%, #cdedbe 23.33%, #c6eec3 26.67%, #beefc9 30%, #b7f0cf 33.33%, #b0f1d6 36.67%, #aaf2dd 40%, #a4f2e4 43.33%, #a0f2eb 46.67%, #9df2f2 50%, #9bf2f9 53.33%, #9cf1ff 56.67%, #9df0ff 60%, #a1efff 63.33%, #a6edff 66.67%, #acecff 70%, #b3eaff 73.33%, #bce8ff 76.67%, #c5e6ff 80%, #cee3ff 83.33%, #d7e1ff 86.67%, #e1dfff 90%, #eadcff 93.33%, #f2daff 96.67%, #fad8ff 100%);
-        width: 100vw;
     }
    .body-hogar{
     width: 100vw;
     background-image: linear-gradient(25deg, #ffdeb2 0, #fae0b1 3.33%, #f4e3b0 6.67%, #ece5b1 10%, #e5e7b3 13.33%, #dde9b6 16.67%, #d5ebb9 20%, #cdedbe 23.33%, #c6eec3 26.67%, #beefc9 30%, #b7f0cf 33.33%, #b0f1d6 36.67%, #aaf2dd 40%, #a4f2e4 43.33%, #a0f2eb 46.67%, #9df2f2 50%, #9bf2f9 53.33%, #9cf1ff 56.67%, #9df0ff 60%, #a1efff 63.33%, #a6edff 66.67%, #acecff 70%, #b3eaff 73.33%, #bce8ff 76.67%, #c5e6ff 80%, #cee3ff 83.33%, #d7e1ff 86.67%, #e1dfff 90%, #eadcff 93.33%, #f2daff 96.67%, #fad8ff 100%);
+    }
+    .body-educacion{
+        width: 100vw;
+        background-image: linear-gradient(25deg, #ffdeb2 0, #fae0b1 3.33%, #f4e3b0 6.67%, #ece5b1 10%, #e5e7b3 13.33%, #dde9b6 16.67%, #d5ebb9 20%, #cdedbe 23.33%, #c6eec3 26.67%, #beefc9 30%, #b7f0cf 33.33%, #b0f1d6 36.67%, #aaf2dd 40%, #a4f2e4 43.33%, #a0f2eb 46.67%, #9df2f2 50%, #9bf2f9 53.33%, #9cf1ff 56.67%, #9df0ff 60%, #a1efff 63.33%, #a6edff 66.67%, #acecff 70%, #b3eaff 73.33%, #bce8ff 76.67%, #c5e6ff 80%, #cee3ff 83.33%, #d7e1ff 86.67%, #e1dfff 90%, #eadcff 93.33%, #f2daff 96.67%, #fad8ff 100%);
+     }
+    .body-tecnologia{
+            width: 100vw;
+            background-image: linear-gradient(25deg, #ffdeb2 0, #fae0b1 3.33%, #f4e3b0 6.67%, #ece5b1 10%, #e5e7b3 13.33%, #dde9b6 16.67%, #d5ebb9 20%, #cdedbe 23.33%, #c6eec3 26.67%, #beefc9 30%, #b7f0cf 33.33%, #b0f1d6 36.67%, #aaf2dd 40%, #a4f2e4 43.33%, #a0f2eb 46.67%, #9df2f2 50%, #9bf2f9 53.33%, #9cf1ff 56.67%, #9df0ff 60%, #a1efff 63.33%, #a6edff 66.67%, #acecff 70%, #b3eaff 73.33%, #bce8ff 76.67%, #c5e6ff 80%, #cee3ff 83.33%, #d7e1ff 86.67%, #e1dfff 90%, #eadcff 93.33%, #f2daff 96.67%, #fad8ff 100%);
     }
     .contenedor {
         width: 100vw;
@@ -125,19 +132,19 @@
        .descripcion {
            padding: 0px 5px;
        }
-       ul {
-           width: 100vw;
+       .medios-de-contacto {
+           padding: 0;
            display: flex;
            flex-direction: row;
            list-style: none;
        }
        .contactos {
-        width: 30px;
-        height: 30px;
-        padding: 16px 6px;
+        width: 50px;
+        height: 60px;
+        padding: 5px 1px;
     }
       ul li h3 {
-          font-size: 19px;
+          font-size: 15px;
           position: relative;
           top: 15px;
       }
@@ -467,7 +474,7 @@
            font-size: 30px;
            padding: 0px 5px;
        }
-       ul {
+       .medios-de-contacto {
            width: 100vw;
            display: flex;
            flex-direction: row;
@@ -475,8 +482,8 @@
            list-style: none;
        }
        .contactos {
-        width: 30px;
-        height: 30px;
+        width: 55px;
+        height: 60px;
         padding: 16px 6px;
     }
       ul li h3 {
@@ -497,8 +504,8 @@
         justify-content: center;
         align-items: center;
         position: fixed;
-        bottom: 0px;
-        right: 110px;
+        bottom: 5vw;
+        left: 85vh;
         box-shadow: 1px 3px 3px 3px rgba(14, 155, 17, 0.5);  
     }
     .carrito-compra img {
@@ -806,8 +813,8 @@
        }
        
        .contactos {
-        width: 35px;
-        height: 35px;
+        width: 60px;
+        height: 60px;
         padding: 16px 6px;
         transition: all .4s ease-in-out;
     }
@@ -829,7 +836,7 @@
           justify-content: center;
           align-items: center;
           position: fixed;
-          left: 95vw;
+          left: 93vw;
           bottom: 1vh;
           box-shadow: 1px 3px 3px 3px rgba(14, 155, 17, 0.5);  
         
